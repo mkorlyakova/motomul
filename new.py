@@ -41,7 +41,7 @@ try:
     dep = []
     #t0 = time.localtime()
 
-    while i<30:
+    while i<30:# redaction ******* number of frame to work / change to True for unlimit frame read
         i += 1
         f = p.wait_for_frames()
         #tc = time.localtime()
