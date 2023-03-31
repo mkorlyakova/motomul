@@ -71,7 +71,7 @@ try:
         if (not depth ) :
             pass
         else:
-            if 1:
+            if 0: ## write frame (for dataset make)
                 try:
                     matplotlib.image.imsave('img/'+str(i)+'.png', I)
                     matplotlib.image.imsave('dep/' + str(i) + '.png', D/D.max())
@@ -134,9 +134,9 @@ plt.show()
 
 
 new_ag = np.hstack((a,g,xyz))
-
+## save track to .csv
 df = pd.DataFrame(new_ag, columns=['ax','ay','az','gx','gy','gz','x','y','z'])
-df.to_csv('new-ag.csv')
+df.to_csv('new-ag.csv') ## change name for new track
 
 
 
